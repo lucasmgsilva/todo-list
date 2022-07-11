@@ -3,3 +3,132 @@
     margin: -1.6875rem auto 0;
     padding: 0 1rem;
 }
+
+.newTaskForm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.newTaskForm > input {
+    flex: 1;
+    background: var(--gray-500);
+    font-size: 1rem;
+    border-radius: 8px;
+    height: 3.375rem;
+    padding: 1rem;
+    box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--gray-700);
+    color: var(--gray-100);
+    line-height: 1.225rem;
+}
+
+.newTaskForm > input::placeholder {
+  color: var(--gray-300);
+}
+
+.newTaskForm > input:focus {
+    border: 1px solid var(--purple-dark);
+}
+
+.newTaskForm button[type="submit"] {
+    cursor: pointer;
+    background: var(--blue-dark);
+    width: 5.625rem;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 0;
+    color: var(--gray-100);
+    font-size: 0.875rem;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newTaskForm > button[type="submit"]:hover {
+    background: var(--blue);
+}
+
+.newTaskForm > button[type="submit"] svg {
+    font-size: 1.25rem;
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1.5rem;
+}
+
+.tasksHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+.createdTasks {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.createdTasks > strong {
+    font-size: 0.875;
+    font-weight: bold;
+    color: var(--blue);
+}
+
+.createdTasks > span {
+    background: var(--gray-400);
+    color: var(--gray-200);
+    padding: 0.125rem 0.5rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border-radius: 0.75rem;
+}
+
+.completedTasks {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.completedTasks > strong {
+    font-size: 0.875;
+    font-weight: bold;
+    color: var(--purple);
+}
+
+.completedTasks > span {
+    background: var(--gray-400);
+    color: var(--gray-200);
+    padding: 0.125rem 0.5rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border-radius: 0.75rem;
+}
+
+.emptyTaskList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 4rem 1.5rem;
+    border-radius: 8px;
+    border-top: 1px solid var(--gray-400);
+}
+
+.emptyTaskList > img {
+    width: 3.5rem;
+}
+
+.emptyTaskList > div {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    text-align: center;
+    color: var(--gray-300);
+}

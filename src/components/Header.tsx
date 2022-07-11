@@ -1,4 +1,4 @@
-import ToDoListLogo from '../assets/todo-list-logo.svg'
+import ToDoListLogo from '../assets/todo-logo.svg'
 
 import styles from './Header.module.css'
 
