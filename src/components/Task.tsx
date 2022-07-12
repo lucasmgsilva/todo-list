@@ -24,7 +24,7 @@ export function Task({ task, onDeleteTask, onCompleteTask }: TaskProps) {
     }
 
     return (
-        <article className={styles.task}>
+        <article className={`${styles.task} ${task.isCompleted && styles.completedTask}`}>
             <button onClick={handleCompleteTask} className={task.isCompleted ? styles.completedTaskButton : styles.taskButton}>
                 {
                     task.isCompleted && <Check />
